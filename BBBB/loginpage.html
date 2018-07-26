@@ -1,0 +1,47 @@
+<html>
+<head><style>
+form{
+	padding:20px;
+width:300px;
+height:400px;
+
+}
+          body {
+
+
+            background-image: url(image4.jpg);
+            background-size:cover;
+         }
+      </style>
+</head>
+
+
+<body>
+<style>
+
+input[type=text]
+{
+width:200px;
+height:30px;
+padding-left:10px;
+border:0;
+border-radius:10px;
+}</style>
+
+<form method="post" action="insertlogindata.php">
+<center><table style="background-color:rgba(0,0,0,.5)">
+
+<tr><td><h1><b><center>LOGIN<center><b><h1></td></tr>
+<tr><td><input type="text" name="name" placeholder="Username" required></td></tr>
+<?php echo "$emailErr";?>
+<tr><td><input type="text" name="pass" placeholder="password" required></td></tr>
+<?php echo "$passwordErr"?>
+<tr><td><button><b><i>SUBMIT</i></b></button></td></tr>
+<tr><td>Don't have account? <a href="signup3.html">SIGN UP</a></td></tr>
+
+
+ 
+ </table></center> </body>
+</form>
+
+</html>
